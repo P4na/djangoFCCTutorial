@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>this is the products page</h2>
+{% for product in products %}
+    <h4>{{product.title}}</h4>
+    <p>{{product.description}}</p>
+    <p>{{product.price}}</p>
+    <input type="text" name="" id="" value="{{product.summary}}">
+    <a href="#"><button>vai al prodotto</button></a>
+{% endfor %}
+{% endblock %}
