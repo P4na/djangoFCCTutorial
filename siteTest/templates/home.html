@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Home Page</h1>
+<h2>Lorem ipsum dolor sit amet.</h2>
+{{username}}
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore vel ipsam rerum.
+Quas odio provident tenetur totam beatae harum nulla excepturi eligendi aspernatur, exercitationem, a, perspiciatis similique eum minus est!</p>
+<h3>this is a list</h3>
+<ul>
+    {%for element in numList%}
+    <li>{{element}}</li>
+    {%endfor%}
+</ul>
+
+{% endblock %}
